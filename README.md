@@ -1,4 +1,4 @@
-# 📊 Sistema de Gestão Financeira Desktop
+#  Sistema de Gestão Financeira Desktop
 
 ![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
 ![SQLite](https://img.shields.io/badge/sqlite-%2307405e.svg?style=for-the-badge&logo=sqlite&logoColor=white)
@@ -6,7 +6,7 @@
 
 Este repositório contém uma aplicação desktop voltada para o controle de fluxo de caixa e análise de dados financeiros. Desenvolvido em Python, o projeto transcende a simples criação de interfaces gráficas, enfatizando conceitos técnicos como persistência segura de dados local, chamadas nativas à API do Sistema Operacional e algoritmos de redundância.
 
-## ⚙️ Arquitetura Interna e Integração com S.O.
+##  Arquitetura Interna e Integração com S.O.
 
 O desenvolvimento deste software prioriza a compreensão profunda de interações de baixo nível e manipulação de arquivos:
 
@@ -15,13 +15,13 @@ O desenvolvimento deste software prioriza a compreensão profunda de interaçõe
 * Renderização Gráfica Nativamente Escalável (DPI Awareness): O software executa chamadas diretas à shcore.dll do Windows para habilitar o DPI Awareness em nível de processo. Isso garante que o pipeline de renderização ignore o escalonamento virtual do S.O., mantendo a fidelidade visual em displays de alta densidade de pixels.
 * Validação de Integridade Binária: Durante o processo de inicialização, o software submete o arquivo do banco de dados a diretrizes internas do motor SQLite (PRAGMA integrity_check). Este procedimento certifica que o arquivo não apresenta anomalias estruturais antes de estabelecer a conexão com o banco.
 
-## ✨ Recursos da Aplicação
+##  Recursos da Aplicação
 
 * Controle Lógico de Ativos: Segmentação estrutural em tempo real entre o fluxo de caixa operacional diário e o fundo de reserva (aportes e resgates).
 * Visualização de Dados e Drill-down: Geração de relatórios visuais utilizando Matplotlib renderizado no canvas do Tkinter. Suporta navegação cronológica aprofundada nos níveis anual, mensal, diário e intradiário (hora/minuto).
 * Motor de Busca Otimizado: Consultas SQL parametrizadas e projetadas para filtragem por substrings, formatações de data específicas e valores de ponto flutuante, incluindo tratamento para mitigação de erros de precisão decimal.
 
-## 🛠️ Estrutura Modular
+##  Estrutura Modular
 
 O código-fonte foi refatorado e dividido visando alta coesão e baixo acoplamento:
 
@@ -30,7 +30,7 @@ O código-fonte foi refatorado e dividido visando alta coesão e baixo acoplamen
 * banco_dados.py: Motor de conexão SQLite, rotinas de I/O, backup e chamadas de sistema.
 * main.py: Entry point da aplicação, orquestração de UI (Tkinter) e renderização gráfica.
 
-## 🚀 Instruções de Implantação
+##  Instruções de Implantação
 
 1. Clone este repositório no seu ambiente local:
 git clone https://github.com/Luisd33v24/sistema-de-caixa.git
@@ -44,7 +44,7 @@ pip install matplotlib
 4. Inicie a aplicação:
 python main.py
 
-## 👨‍💻 Autor
+##  Autor
 
 Luís Eduardo
 Estudante do Curso Técnico em Informática (IFPB) | Focado em arquitetura de computadores, C/C++, Assembly, Engenharia Reversa e programação de baixo nível.
