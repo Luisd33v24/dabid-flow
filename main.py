@@ -17,7 +17,7 @@ try:
     import matplotlib.ticker as ticker
     from matplotlib.ticker import FuncFormatter
 
-    # Importando os novos arquivos!
+    # Import do arquivo de banco de dados e utilidades
     from utilidades import *
     from banco_dados import conectar_db, inicializar_banco
 
